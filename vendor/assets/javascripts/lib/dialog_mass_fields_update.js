@@ -13,9 +13,8 @@ ActiveAdmin.dialogMassFieldsUpdate = function(message, inputs, callback){
 
     let klass = type === 'datepicker' ? type : '';
     html += `<li>
-<input type='checkbox' class='mass_update_protect_fild_flag' value='Y' id="mass_update_dialog_${name}" />
 <label for="mass_update_dialog_${name}"> ${name.charAt(0).toUpperCase() + name.slice(1)}</label>
-<${wrapper} name="${name}" class="${klass}" type="${type}" disabled="disabled">` +
+<${wrapper} name="${name}" class="${klass}" type="${type}">` +
         (opts ? ((() => {
           const result = [];
 
